@@ -72,11 +72,18 @@ export default function LoginForm() {
                         />
                     </FormControl>
                 </Grid>
-                <Grid item sm={12} xs={12}>
+
+                <Grid item sm={8} xs={12}>
                     <FormControl fullWidth id='DincerForm'>
-                        <Button className="Login_btn" style={{  borderRadius: 8 }} size='large' variant="contained" onClick={() => { navigate("/") }}>Login</Button>
+                        <Button className="Login_btn" style={{ borderRadius: 8 }} size='large' variant="contained" onClick={() => { navigate("/") }}>Login</Button>
                     </FormControl>
                 </Grid>
+                <Grid item sm={4} xs={12}>
+                    <FormControl fullWidth id='DincerForm'>
+                        <Button className="Login_btn" style={{ borderRadius: 8 }} size='large' variant="contained" onClick={() => { navigate("/auth/register") }}>Register</Button>
+                    </FormControl>
+                </Grid>
+
             </Grid>
         </>
     );
